@@ -1,0 +1,73 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BACKLOG	genFunctions.h	22;"	d
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -Wall -I.$/;"	m
+CLIENTMODE	genFunctions.h	25;"	d
+CMDBUFF	genFunctions.h	20;"	d
+CONNECT	genFunctions.h	28;"	d
+CONNECTLIMIT	genFunctions.h	41;"	d
+CONNECT_ACK	genFunctions.h	35;"	d
+FILETRANSFERINPROGRESS	genFunctions.h	42;"	d
+FILETRANSFERNOTINPROGRESS	genFunctions.h	43;"	d
+GET	genFunctions.h	30;"	d
+GET_ACK	genFunctions.h	37;"	d
+IPAddress	registryList.h	/^	char IPAddress[16];$/;"	m	struct:myIPPortStruct
+MAXBUFF	genFunctions.h	19;"	d
+PUT	genFunctions.h	31;"	d
+PUT_ACK	genFunctions.h	38;"	d
+REGISTER	genFunctions.h	27;"	d
+REGISTER_ACK	genFunctions.h	34;"	d
+SERVERMODE	genFunctions.h	24;"	d
+TARGET	Makefile	/^TARGET = serverclient$/;"	m
+TERMINATE	genFunctions.h	29;"	d
+TERMINATE_ACK	genFunctions.h	36;"	d
+UPDATE	genFunctions.h	32;"	d
+UPDATE_ACK	genFunctions.h	39;"	d
+_GNU_SOURCE	genFunctions.c	1;"	d	file:
+addToHostList	registryList.c	/^int addToHostList(struct myIPPortStruct hostStruct, int mode){$/;"	f
+clrscr	fileShare.c	8;"	d	file:
+current_client	fileShare.c	/^node_t *current_client = NULL;$/;"	v
+current_server	fileShare.c	/^node_t *current_server = NULL;$/;"	v
+deSerialize	genFunctions.c	/^int deSerialize(char* buff, int mode, int cliSock){$/;"	f
+downloadFile	genFunctions.c	/^int downloadFile(int conID, char* fileName, int sockfd) {$/;"	f
+fileName	registryList.h	/^	char fileName[64];$/;"	m	struct:myIPPortStruct
+find	registryList.c	/^struct node* find(int key, int mode){$/;"	f
+findHostinList	registryList.c	/^struct node* findHostinList(char* key, int mode){$/;"	f
+findIPinList	registryList.c	/^struct node* findIPinList(char* key, int mode){$/;"	f
+formListStruct	genFunctions.c	/^struct myIPPortStruct formListStruct(char* buff, int mode, int cliSock){$/;"	f
+getSelfHost	genFunctions.c	/^int getSelfHost(char* selfIP){$/;"	f
+getSelfIP	genFunctions.c	/^int getSelfIP(char* selfIP){$/;"	f
+handleCMDs	genFunctions.c	/^int handleCMDs(char* command, struct sockaddr_in serverAddr, short int mode, int sockfd){$/;"	f
+head_client	fileShare.c	/^node_t *head_client = NULL;$/;"	v
+head_server	fileShare.c	/^node_t *head_server = NULL;$/;"	v
+hostAddr	registryList.h	/^    struct myIPPortStruct hostAddr;$/;"	m	struct:node	typeref:struct:node::myIPPortStruct
+hostName	registryList.h	/^	char hostName[32];$/;"	m	struct:myIPPortStruct
+isHostListEmpty	registryList.c	/^bool isHostListEmpty(int mode)$/;"	f
+isRegistered	fileShare.c	/^bool isRegistered = false;$/;"	v
+lengthOfHostList	registryList.c	/^int lengthOfHostList(int mode)$/;"	f
+main	fileShare.c	/^int main(int argc, char *argv[]){$/;"	f
+maxFD	fileShare.c	/^int maxFD;$/;"	v
+myIPPortStruct	registryList.h	/^struct myIPPortStruct {$/;"	s
+next	registryList.h	/^    struct node * next;$/;"	m	struct:node	typeref:struct:node::node
+node	registryList.h	/^typedef struct node {$/;"	s
+node_t	registryList.h	/^} node_t;$/;"	t	typeref:struct:node
+port	registryList.h	/^	int port;$/;"	m	struct:myIPPortStruct
+printCreator	genFunctions.c	/^int printCreator(){$/;"	f
+printHelp	genFunctions.c	/^int printHelp(){$/;"	f
+printHostList	registryList.c	/^int printHostList(int mode){$/;"	f
+readfds	fileShare.c	/^fd_set readfds;$/;"	v
+registerOrConnect	genFunctions.c	/^int registerOrConnect(int listenPort,char* ipAddr,int port, int cmd){$/;"	f
+removeFromHostList	registryList.c	/^int removeFromHostList(int key, int mode){$/;"	f
+removeFromHostListSockfd	registryList.c	/^int removeFromHostListSockfd(int sockfd, int mode){$/;"	f
+run	genFunctions.c	/^int run(int port, short int runMode){$/;"	f
+runMode	registryList.h	/^    	int runMode;$/;"	m	struct:myIPPortStruct
+serializeList	genFunctions.c	/^int serializeList(int cmdString, char *buff, int mode){$/;"	f
+sockfd	registryList.h	/^	int sockfd;$/;"	m	struct:myIPPortStruct
+terminate	genFunctions.c	/^int terminate(int conID, int mode){$/;"	f
+upDownFile	genFunctions.c	/^int upDownFile(int conID, char* fileName, int cmd, char * getPutCmd) {$/;"	f
+updateRegistry	genFunctions.c	/^int updateRegistry(struct sockaddr_in clientAddr){$/;"	f
